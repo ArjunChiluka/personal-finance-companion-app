@@ -4,7 +4,6 @@ import { getTransactions, saveTransactions } from "../storage/storage";
 export const FinanceContext = createContext();
 
 export const FinanceProvider = ({ children }) => {
-  // ----- Transactions State -----
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
@@ -34,10 +33,8 @@ export const FinanceProvider = ({ children }) => {
       prev.map((t) => (t.id === updatedTxn.id ? updatedTxn : t))
     );
   };
-
-  // ----- Goals State -----
-  const [goal, setGoal] = useState(0);   // Goal amount
-  const [saved, setSaved] = useState(0); // Amount saved
+  const [goal, setGoal] = useState(0); 
+  const [saved, setSaved] = useState(0); 
 
   const addSavings = (amount) => {
     if (!amount || isNaN(amount)) return;
@@ -50,7 +47,6 @@ export const FinanceProvider = ({ children }) => {
     }
   };
 
-  // ----- Provider Value -----
   return (
     <FinanceContext.Provider
       value={{

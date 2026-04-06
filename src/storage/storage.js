@@ -2,9 +2,6 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const TRANSACTION_KEY = "transactions";
 
-/**
- * Save transactions to local storage
- */
 export const saveTransactions = async (data) => {
   try {
     const jsonValue = JSON.stringify(data);
@@ -14,9 +11,6 @@ export const saveTransactions = async (data) => {
   }
 };
 
-/**
- * Load transactions from local storage
- */
 export const getTransactions = async () => {
   try {
     const jsonValue = await AsyncStorage.getItem(TRANSACTION_KEY);
@@ -27,9 +21,7 @@ export const getTransactions = async () => {
   }
 };
 
-/**
- * Clear all transactions (optional utility)
- */
+
 export const clearTransactions = async () => {
   try {
     await AsyncStorage.removeItem(TRANSACTION_KEY);

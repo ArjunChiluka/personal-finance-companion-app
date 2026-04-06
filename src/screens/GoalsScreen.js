@@ -15,7 +15,7 @@ export default function GoalsScreen() {
     }
 
     addSavings(amount);
-    setInput(""); // Clear input
+    setInput("");
   };
 
   return (

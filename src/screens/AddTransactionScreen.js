@@ -34,7 +34,6 @@ export default function AddTransactionScreen({ navigation }) {
 
     Alert.alert("Success", "Transaction Added ✅");
 
-    // ✅ GO BACK (NOT HOME)
     navigation.goBack();
   };
 

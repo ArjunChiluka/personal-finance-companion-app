@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "FinanceApp",
-    "slug": "FinanceApp",
+    "name": "My Expense Tracker",
+    "slug": "my-expense-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.abhich.FinanceApp"
     },
     "web": {
       "output": "static",
@@ -43,6 +44,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "22e488b8-400b-4c3b-ba2e-a2c74e70fd91"
+      }
     }
   }
 }

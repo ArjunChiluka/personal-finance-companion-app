@@ -1,4 +1,3 @@
-// AppNavigator.js
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -13,12 +12,11 @@ import TransactionsScreen from "../screens/TransactionsScreen";
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-// ✅ FIXED: Remove header from stack (so no duplicate)
 function TransactionStack() {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false, // ❌ disable stack header
+        headerShown: false, 
       }}
     >
       <Stack.Screen
@@ -37,18 +35,16 @@ function TransactionStack() {
   );
 }
 
-// Bottom Tabs
 export default function AppNavigator() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
-        // ✅ Single header for all screens
+
         headerShown: true,
         headerStyle: { backgroundColor: "#4CAF50" },
         headerTintColor: "#fff",
         headerTitleStyle: { fontWeight: "bold" },
 
-        // Bottom tab styling
         tabBarActiveTintColor: "#4CAF50",
         tabBarInactiveTintColor: "#999",
         tabBarStyle: {
@@ -60,7 +56,6 @@ export default function AppNavigator() {
         },
         tabBarLabelStyle: { fontSize: 12, fontWeight: "bold" },
 
-        // Icons
         tabBarIcon: ({ color, size }) => {
           if (route.name === "Home")
             return <Ionicons name="home" size={size} color={color} />;

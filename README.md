@@ -1,150 +1,38 @@
-# 💰 Personal Finance Companion App
+Personal Finance Tracker App
 
-A mobile application built using React Native and Expo that helps users track daily financial activities, understand spending habits, and manage simple savings goals.
+This is a mobile application developed using React Native and Expo. The app helps users manage their daily expenses, track income, and monitor their savings goals.
 
----
+The main idea of this project is to keep things simple and easy to use. Users can add their transactions, view their balance, and understand how they are spending money.
 
-## 📱 Overview
+Features
+-View total balance, income, and expenses on the dashboard
+-Add, edit, and delete transactions
+-See all transaction history
+-Filter transactions by type
+-View spending insights based on categories
+-Set a savings goal and track progress
 
-This app is designed as a lightweight personal finance companion (not a banking app). It allows users to record transactions, analyze spending patterns, and stay motivated through goal tracking.
+Technology Used
+-React Native with Expo
+-JavaScript
+-React Navigation
+-Context API for state management
+-AsyncStorage for storing data locally
 
-The focus of this project is on clean UI, smooth user experience, and well-structured mobile app architecture.
+How it Works
+-When the user opens the app, they can see their financial summary on the dashboard.
+-They can add transactions, and the data updates automatically across all screens.
+-The app also allows users to set a savings goal and track how much they have saved.
 
----
+Live Demo
+-APK Download: https://expo.dev/accounts/abhich/projects/FinanceApp/builds/059b7be6-419f-4706-b828-5ed2be2a8c84
+-GitHub Repo: https://github.com/ArjunChiluka/personal-finance-companion-app
+-Demo Video: https://drive.google.com/file/d/1rw3J40Z3dLa3eCl_f0qiYpEqz4IYLPHe/view?usp=sharing
 
-## 🚀 Features
+Notes
+-This app does not use any backend or API
+-All data is stored locally on the device
+-Currency used is INR
 
-### 🏠 Home Dashboard
-
-* Displays current balance, total income, and total expenses
-* Visual representation of spending (income vs expense chart)
-* Clean card-based layout for quick understanding
-
-### 💸 Transactions
-
-* Add, edit, and delete transactions
-* View transaction history
-* Search and filter transactions
-* Smooth navigation using Stack Navigator
-
-### 📊 Insights
-
-* Total expenses overview
-* Category-wise spending breakdown
-* Weekly comparison of spending
-
-### 🎯 Goals (Savings Feature)
-
-* Set a monthly savings goal
-* Add savings incrementally
-* Track saved amount
-* Alert when goal is achieved
-
----
-
-## 🧠 Product Thinking
-
-The app focuses on:
-
-* Simplicity and clarity
-* Everyday usability
-* Minimal but meaningful features
-* Smooth navigation and feedback
-
-It is designed to help users quickly understand their financial habits without unnecessary complexity.
-
----
-
-## 🛠 Tech Stack
-
-* React Native
-* Expo
-* JavaScript
-* React Navigation (Stack + Bottom Tabs)
-* Context API (State Management)
-* AsyncStorage (Local Data Persistence)
-* Expo Vector Icons
-
----
-
-## 📂 Project Structure
-
-/components
-/context
-/constants
-/screens
-/navigation
-/storage
-App.js
-
----
-
-## 🔄 Data Handling
-
-* Transactions are stored using AsyncStorage
-* Global state is managed using Context API
-* Data persists even after app reload
-
----
-
-## 📱 User Flow
-
-1. User opens app → Dashboard is displayed
-2. User navigates to Transactions → adds/edits/deletes entries
-3. Data updates are reflected in Dashboard and Insights
-4. User sets savings goals → tracks progress
-
----
-
-## ⚙️ Installation & Setup
-
-```bash
-1. Clone the repository
-   git clone <your-repo-link>
-
-2. Navigate to project folder
-   cd FinanceApp
-
-3. Install dependencies
-   npm install
-
-4. Start the app
-   npx expo start
-
-5. Scan QR code using Expo Go (Android/iOS)
-```
-
----
-
-## 📌 Assumptions
-
-* This is a standalone finance tracker (no bank integration)
-* Data is stored locally (no backend)
-* Currency is INR (₹)
-* Users manually enter transactions
-
----
-
-## ✨ Future Improvements
-
-* Dark mode support
-* Notifications and reminders
-* Budget tracking feature
-* Data export functionality
-* Animated charts and transitions
-
----
-
-## 📷 Demo
-
-(Add screenshots or demo video link here)
-
----
-
-## 🚀 Outcome
-
-This project demonstrates the ability to design and build a complete mobile application with real-world features, clean architecture, and a user-friendly experience.
-
-## 👤 Author
-
-Arjun Chiluka
+Conclusion
+This project helped me understand how to build a complete mobile app with multiple screens, state management, and local data storage. It focuses on usability and simple design.

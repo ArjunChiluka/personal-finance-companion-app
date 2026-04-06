@@ -25,6 +25,6 @@ const styles = StyleSheet.create({
   fontSize: 20,
   fontWeight: "bold",
   marginTop: 5,
-  color: "#2e7d32", // green for positive feel
+  color: "#2e7d32", 
 },
 });
